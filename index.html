@@ -134,7 +134,7 @@
                     more();
                 }
                 if (window.scrollY > score) {
-                    score = window.scrollY;
+                    score = parseInt(window.scrollY);
                     $score.innerHTML = score.toLocaleString();
                     window.localStorage.setItem('score', score);
                 }
